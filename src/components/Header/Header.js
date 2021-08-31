@@ -61,7 +61,7 @@ const MainHeader = styled.div`
   border-bottom: 1px solid ${COLORS.gray[300]};
   color: ${COLORS.gray[900]};
 
-  @media (${QUERIES.phoneAndDown}) {
+  @media ${QUERIES.tabletAndDown} {
     padding: 12px 16px;
     justify-content: space-between;
   }
@@ -73,7 +73,7 @@ const Nav = styled.nav`
   margin: 0px 48px;
   overflow: auto;
 
-  @media (${QUERIES.phoneAndDown}) {
+  @media ${QUERIES.tabletAndDown} {
     display: none;
   }
 `;
@@ -81,7 +81,7 @@ const Nav = styled.nav`
 const Side = styled.div`
   flex: 1;
 
-  @media (${QUERIES.phoneAndDown}) {
+  @media ${QUERIES.tabletAndDown} {
     flex: 0;
   }
 `;
@@ -99,7 +99,11 @@ const NavLink = styled.a`
 `;
 
 const MobileIcons = styled.div`
-  display: flex;
+  display: none;
+
+  @media ${QUERIES.tabletAndDown} {
+    display: flex;
+  }
 `
 
 const IconButton = styled(UnstyledButton)`
