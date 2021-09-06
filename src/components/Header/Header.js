@@ -24,12 +24,12 @@ const Header = () => {
           <Logo />
         </Side>
         <Nav>
-          <NavLink href="/sale">auniset</NavLink>
-          <NavLink href="/new">New&nbsp;Releasesauinset</NavLink>
-          <NavLink href="/men">Menuaie</NavLink>
-          <NavLink href="/women">Womenauie</NavLink>
-          <NavLink href="/kids">Kidsauie</NavLink>
-          <NavLink href="/collections">Collectionsauie</NavLink>
+          <NavLink href="/sale">Sale</NavLink>
+          <NavLink href="/new">New&nbsp;Release</NavLink>
+          <NavLink href="/men">Menu</NavLink>
+          <NavLink href="/women">Women</NavLink>
+          <NavLink href="/kids">Kids</NavLink>
+          <NavLink href="/collections">Collections</NavLink>
         </Nav>
         <Side />
         <MobileIcons>
