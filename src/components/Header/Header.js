@@ -24,12 +24,12 @@ const Header = () => {
           <Logo />
         </Side>
         <Nav>
-          <NavLink href="/sale">Sale</NavLink>
-          <NavLink href="/new">New&nbsp;Releases</NavLink>
-          <NavLink href="/men">Men</NavLink>
-          <NavLink href="/women">Women</NavLink>
-          <NavLink href="/kids">Kids</NavLink>
-          <NavLink href="/collections">Collections</NavLink>
+          <NavLink href="/sale">auniset</NavLink>
+          <NavLink href="/new">New&nbsp;Releasesauinset</NavLink>
+          <NavLink href="/men">Menuaie</NavLink>
+          <NavLink href="/women">Womenauie</NavLink>
+          <NavLink href="/kids">Kidsauie</NavLink>
+          <NavLink href="/collections">Collectionsauie</NavLink>
         </Nav>
         <Side />
         <MobileIcons>
@@ -69,7 +69,11 @@ const MainHeader = styled.div`
 
 const Nav = styled.nav`
   display: flex;
-  gap: 48px;
+  gap: clamp(
+    1rem,
+    9vw - 4rem,
+    4rem
+  );
   margin: 0px 48px;
   overflow: auto;
 
